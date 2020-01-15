@@ -14,7 +14,7 @@ testBot.on("message", (message) => {
     try{
         switch(commands[0]){
 
-            case config[0]+"test":
+            case config[0].split("=")[1]+"test":
                 message.reply("Success!")
 
         }
@@ -23,4 +23,4 @@ testBot.on("message", (message) => {
     }
 })
 
-testBot.login(config[1])
+testBot.login(config[1].split("=")[1])

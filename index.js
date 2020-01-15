@@ -11,11 +11,11 @@ testBot.on('ready', () => {
 })
 
 testBot.on("message", (message) => {
-    var commands = message.content.split(" ")
-    var cmd_main=config[0].split("=")[1]+commands[0]
+    var commands = message.content.replace(config[0].split("=")[1],"").split(" ")
+    var cmd_main = commands[0]
     try{
         console.log(message.author+": "+message.content)
-        if(message.content=="WMtest")
+        if(cmd_main=="test")
             message.reply("Success!")
     }catch(e){
         console.log("An Error occurred:\n"+e)

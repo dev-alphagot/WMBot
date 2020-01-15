@@ -1,0 +1,2 @@
+prefix=WM
+token=__ENTER__YOUR__TOKEN__

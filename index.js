@@ -22,3 +22,5 @@ testBot.on("message", (message) => {
         console.log("An Error occurred:\n"+e)
     }
 })
+
+testBot.login(config[1])

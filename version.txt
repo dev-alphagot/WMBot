@@ -1,1 +1,1 @@
-1.0-alpha1-Kubuntu
+1.0-alpha2-vote[WIP]-Kubuntu
